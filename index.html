@@ -1,0 +1,180 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<SCRIPT language=JavaScript src="brd.js"></SCRIPT>
+
+<style TYPE="text/css">
+.debu3 {
+	FONT-SIZE: 100 px; FONT-WEIGHT: bold; FONT-FAMILY: Arial }
+<!--  A:hover	{color:red} -->
+</style>
+<script language="javascript">
+<!--
+
+function refer()
+{
+var URL = "http://www.easysurf.cc/stimerk.htm" ;
+var txt = "Visit:  " + URL + "   " ;
+txt += "  I recommend this page to you." ;
+var to="" ;
+var sb = "I found a site I thought you'd like to see" ;
+var ad = 'mailto:' + to + '?subject=' + sb + '&body=' + txt ;
+document.location = ad ;
+}
+ -->        
+</script>
+
+<TITLE>Stop Watch Timer - Pause - Seconds</TITLE>
+<META NAME="GENERATOR" CONTENT="Mozilla/3.0b5aGold (Win16; I) [Netscape]">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META name="title"content="Stop Watch Timer">
+<META name="keywords" content="Stop, Watch, Timer, timer, Stop Watch Timer, online">
+<META name="description" content="Stop Watch Timer with pause - seconds">
+
+
+<script language="JavaScript">
+<!-- 
+
+var watchstopped = true;
+var totim = 0;
+var myTime = new Date();
+starTime = 0;
+
+function stpstrtclicked(){
+watchstopped = !(watchstopped);
+if (watchstopped){
+	clearTimeout(myTimer);
+	}
+	else{
+	sttim();
+	}
+}
+
+function sttim(){
+myTime = new Date();
+starTime = myTime.getTime();
+if (totim != 0){
+	starTime = myTime.getTime() - (totim * 1000)
+	}else{}
+countime();
+}
+
+function countime(){
+myTime = new Date();
+totim = ((myTime - starTime)/1000);
+document.getElementById("counter").innerHTML = pad(gesult(totim));
+
+if(!watchstopped){
+	myTimer = setTimeout("countime()",10);
+	}else{}
+}
+
+function resetclicked(){
+document.getElementById("counter").innerHTML = "  0.000" ;
+totim = 0;
+starTime = myTime;
+}
+
+function gesult(ff){
+
+ if (Number.prototype.toFixed) {
+   ff = ff.toFixed(3);
+   ff = parseFloat(ff);
+ }
+ else {
+   var leftSide = Math.floor(ff);
+   var rightSide = ff - leftSide;
+   ff = leftSide + Math.round(rightSide *1e+14)/1e+14;
+ }
+ return ff;
+}
+
+function pad(n) {
+	var g = parseInt(n, 10);
+	var j = n - g;
+
+var ff = j;
+
+ if (Number.prototype.toFixed) {
+   ff = ff.toFixed(3);
+   ff = parseFloat(ff);
+ }
+ else {
+   var leftSide = Math.floor(ff);
+   var rightSide = ff - leftSide;
+   ff = leftSide + Math.round(rightSide *1e+14)/1e+14;
+	}
+var gn = ff + "";
+var cNum = gn.length;
+
+	 if(cNum == 1)
+		{
+		var zz = n + "." + "000";
+		}
+	else if(cNum == 3)
+		{
+		var zz = n + "00";
+		}
+	else if(cNum == 4)
+		{
+		var zz = n + "0";
+		}
+
+	else
+		{
+		var zz = n;
+		}
+		return zz; 
+	}
+
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFAF0" TEXT=#000000 LINK="Blue" VLINK="#0000A0" ALINK="Blue" onkeydown="stpstrtclicked()" onload="resetclicked()"; >
+
+
+<CENTER>
+<br>
+<br>
+<br>
+<br>
+<br> 
+<H1 padding-top="100">Stop Watch Timer</H1></CENTER>
+
+<CENTER>
+<TABLE BORDER=0 width=20% height=10% >
+<TR>
+<TD ALIGN=center><DIV class="debu3" id=counter>
+ </DIV></TD><TD>&nbsp;&nbsp;</TD>
+<TD ALIGN=center class="debu3">Seconds</TD></TR>
+</TABLE><BR>
+
+
+<form name="watchform">
+<table border="0" cellpadding="20" cellspacing="20" width="600" height="100">
+<TR>
+<TD><INPUT class="b2t" onclick="stpstrtclicked()" style="width:200px;height:80px;" name="stst" type=button value="Start / Pause"></TD>
+<TD><INPUT class="b3t" onclick="resetclicked()" style="width:200px;height:80px;" type=button value="Reset"></TD>
+</tr>
+</table>
+</form>
+</center>
+
+
+
+<BR>
+<!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+<script>var site="sm2easysurf"</script>
+<script language="JavaScript1.2" src="http://sm2.sitemeter.com/js/counter.js?site=sm2easysurf">
+</script>
+<noscript>
+<a href="http://sm2.sitemeter.com/stats.asp?site=sm2easysurf" target=_top>
+<img src="http://sm2.sitemeter.com/meter.asp?site=sm2easysurf" title="Site Meter" nosave border=0></a>
+</noscript>
+<BR>
+</BODY></HTML>
+
